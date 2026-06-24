@@ -1,50 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Coffee Shop</title>
+<!-- Choice Buttons -->
+<div class="options-container">
+    <button onclick="showMenu('Dining')">Dining</button>
+    <button onclick="showMenu('Takeaway')">Takeaway</button>
+</div>
 
-    <style>
-        body {
-            background-image: url('coffee.jpg'); /* Background image ka naam */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            color: #FFD700;
-            font-size: 50px;
-        }
-
-        p {
-            font-size: 25px;
-            color: #FFF8DC;
-        }
-
-        .box {
-            background-color: rgba(0,0,0,0.6);
-            padding: 20px;
-            margin: 50px;
-            border-radius: 10px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="box">
-        <h1>☕ Welcome to Coffee Shop ☕</h1>
-        <p>Fresh Coffee, Fresh Mood!</p>
-
-        <h2>Our Menu</h2>
-        <p>Espresso - ₹120</p>
-        <p>Cappuccino - ₹150</p>
-        <p>Cold Coffee - ₹180</p>
-    </div>
-
-</body>
-</html 1>
-
+<!-- Wrap your existing menu in this hidden div -->
+<div id="menu-section" style="display: none;">
+    <h2 id="order-type-title"></h2>
+    <h3>Our Menu</h3>
+    <p>Espresso - ₹120</p>
+    <p>Cappuccino - ₹150</p>
+    <p>Cold Coffee - ₹180</p>
+</div>
