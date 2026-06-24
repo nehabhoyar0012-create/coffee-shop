@@ -1,0 +1,11 @@
+function showMenu(type) {
+    // Show the hidden menu section
+    const menu = document.getElementById('menu-section');
+    menu.style.display = 'block';
+
+    // Optional: Update a title to show what they picked
+    document.getElementById('order-type-title').innerText = "Menu for " + type;
+    
+    // Smoothly scroll to the menu
+    menu.scrollIntoView({ behavior: 'smooth' });
+}
